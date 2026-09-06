@@ -1,5 +1,12 @@
 # Validação em dispositivos
 
+## Status
+
+Validação física Android e iOS concluída de forma satisfatória em 2026-09-06,
+incluindo o fluxo principal, acessibilidade, texto ampliado e o roteiro das
+telas do aplicativo. As próximas validações físicas serão regressivas, feitas
+quando houver alterações relevantes na interface ou no desempenho.
+
 ## Android
 
 1. Execute `flutter devices` e selecione um aparelho físico.

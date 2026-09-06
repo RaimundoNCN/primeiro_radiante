@@ -90,11 +90,12 @@ para as próximas iterações deste marco.
 - execução isolada reutilizável para cálculos pesados.
 - importação de CSV, catálogo de dataset sintético e calibração automática.
 - workflow de CI e roteiro de validação Android/iOS.
+- validação física Android e iOS concluída de forma satisfatória.
+- exportação JSON versionada com projetos, cenários, execuções e observações.
 
-Os testes com dispositivos físicos e a calibração contra datasets públicos
-continuam dependendo de aparelhos, fontes de dados e licenças externas. O
-aplicativo agora oferece a infraestrutura local para executar essas validações
-sem apresentar uma simulação como evidência científica.
+A calibração contra datasets públicos continua dependendo de fontes de dados e
+licenças externas. O aplicativo oferece a infraestrutura local para executar
+essas validações sem apresentar uma simulação como evidência científica.
 
 ### Marco 4 — projetos, cenários e SQLite
 

@@ -243,11 +243,24 @@ class AnalysisDatabase {
   }
 
   Future<String> exportJson({int limit = 100}) async {
+    final database = await this.database;
+    final projects = await database.query(
+      'projects',
+      orderBy: 'created_at ASC',
+    );
+    final scenarios = await database.query(
+      'scenarios',
+      orderBy: 'created_at ASC',
+    );
     final runs = await recentRuns(limit: limit);
+    final observatory = await recentObservatory(limit: limit);
     return const JsonEncoder.withIndent('  ').convert({
-      'schemaVersion': 1,
+      'schemaVersion': 2,
       'engineVersion': 'analysis-1',
+      'projects': projects,
+      'scenarios': scenarios,
       'runs': runs.map((run) => run.toMap()).toList(),
+      'observatoryRuns': [for (final run in observatory) run.toMap()],
     });
   }
 
