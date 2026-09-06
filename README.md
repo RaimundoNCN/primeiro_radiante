@@ -109,5 +109,3 @@ O roteiro manual para dispositivos está em
 
 O planejamento completo está em [`docs/README.md`](docs/README.md).
 
-> O Primeiro Radiante não compartilha código, banco, dependências ou ciclo de
-> publicação com a Nuvem / Creator Store.
